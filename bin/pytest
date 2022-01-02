@@ -1,0 +1,10 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome()
+
+driver.get('https://market.m.taobao.com/app/local-life/commercial-tts/index.html#/home')
+
+time.sleep(5)
+
+button1 = driver.find_element_by_xpath('//button[@class="ant-btn ant-btn-primary"]')
